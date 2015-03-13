@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="usbip.c" />
+    <ClCompile Include="usbip_network.c" />
+    <ClCompile Include="usbip_linux.c" />
+    <ClCompile Include="usbip_windows.c" />
+    <ClCompile Include="windows\getopt.c" />
+    <ClCompile Include="windows\getopt_long.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\confdefs.h" />
+    <ClInclude Include="..\libsrc\usbip.h" />
+    <ClInclude Include="public.h" />
+    <ClInclude Include="usbip_network.h" />
+    <ClInclude Include="usbip_osspecific.h" />
+    <ClInclude Include="windows\getopt.h" />
+    <ClInclude Include="win_stub.h" />
+    <ClInclude Include="windows\usbip_windows_kernel_api.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="windows">
+      <UniqueIdentifier>{8269d232-e47e-4862-9a0f-4f13e71e1bda}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

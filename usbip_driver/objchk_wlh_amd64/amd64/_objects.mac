@@ -1,0 +1,21 @@
+
+
+AMD64_OBJECTS=\
+ $(OBJ_PATH)\$O\busenum.obj \
+ $(OBJ_PATH)\$O\pnp.obj \
+ $(OBJ_PATH)\$O\power.obj \
+ $(OBJ_PATH)\$O\buspdo.obj \
+ $(OBJ_PATH)\$O\wmi.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\busenum.res
+
+
+
+# lowercased
+BASEDIR=d:\winddk\7600.16385.1
+OBJECT_ROOT=d:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=e:\documents\vs2010\projects\usbdevredir\usbip_driver
+OBJ_PATH=e:\documents\vs2010\projects\usbdevredir\usbip_driver
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0

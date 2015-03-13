@@ -1,0 +1,1 @@
+void UsbIsolation(HANDLE chdPro, DWORD sessionID, TCHAR *host, TCHAR *busid);

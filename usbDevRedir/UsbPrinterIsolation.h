@@ -1,0 +1,1 @@
+BOOL UsbPrinterIsolation(HANDLE chdPro, DWORD sessionID, TCHAR *DeviceID, DevAttr *pDevAttr);

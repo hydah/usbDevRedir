@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usbDevRedir", "usbDevRedir\usbDevRedir.vcxproj", "{15ECB722-C055-46F9-9492-284C35FF9E60}"
+	ProjectSection(ProjectDependencies) = postProject
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08} = {47C1EB37-9687-4581-B7CD-47A1E9823D08}
+		{2C173853-88C0-4334-85BF-0B46CFD5A007} = {2C173853-88C0-4334-85BF-0B46CFD5A007}
+		{36CEE68D-D6CF-4413-978C-794488F44555} = {36CEE68D-D6CF-4413-978C-794488F44555}
+	EndProjectSection
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "安装包制作", "udrInstall\安装包制作.isproj", "{7E3DA6DA-B432-40C9-A03E-359F581D93FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15ECB722-C055-46F9-9492-284C35FF9E60} = {15ECB722-C055-46F9-9492-284C35FF9E60}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DriveIsolation", "DriveIsolation\DriveIsolation.vcxproj", "{47C1EB37-9687-4581-B7CD-47A1E9823D08}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usbip", "usbip_src\usbip.vcxproj", "{36CEE68D-D6CF-4413-978C-794488F44555}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C173853-88C0-4334-85BF-0B46CFD5A007} = {2C173853-88C0-4334-85BF-0B46CFD5A007}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usbip_common", "usbip_libsrc\usbip_common.vcxproj", "{2C173853-88C0-4334-85BF-0B46CFD5A007}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "usbip_driver", "usbip_driver", "{BD3DFF17-D792-41F1-B1E3-C5F85FDA6A04}"
+	ProjectSection(SolutionItems) = preProject
+		usbip_driver\b.bat = usbip_driver\b.bat
+		usbip_driver\busenum.c = usbip_driver\busenum.c
+		usbip_driver\busenum.h = usbip_driver\busenum.h
+		usbip_driver\buspdo.c = usbip_driver\buspdo.c
+		usbip_driver\code2name.c = usbip_driver\code2name.c
+		usbip_driver\createcert.bat = usbip_driver\createcert.bat
+		usbip_driver\driver.h = usbip_driver\driver.h
+		usbip_driver\pnp.c = usbip_driver\pnp.c
+		usbip_driver\power.c = usbip_driver\power.c
+		usbip_driver\public.h = usbip_driver\public.h
+		usbip_driver\usbip_protocol.h = usbip_driver\usbip_protocol.h
+		usbip_driver\USBIPEnum.inf = usbip_driver\USBIPEnum.inf
+		usbip_driver\Wmi.c = usbip_driver\Wmi.c
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SendMessage", "SendMessage\SendMessage.vcxproj", "{11A7D315-17D2-4832-91EF-8940E2F1D4C2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DriveReMount", "DriveReMount\DriveReMount.vcxproj", "{31086BD1-CD86-40D8-ABC4-E571904109E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Win32 = CD_ROM|Win32
+		Debug|Win32 = Debug|Win32
+		DVD-5|Win32 = DVD-5|Win32
+		Release|Win32 = Release|Win32
+		SingleImage|Win32 = SingleImage|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.CD_ROM|Win32.ActiveCfg = Release|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.CD_ROM|Win32.Build.0 = Release|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.Debug|Win32.Build.0 = Debug|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.DVD-5|Win32.ActiveCfg = Debug|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.DVD-5|Win32.Build.0 = Debug|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.Release|Win32.ActiveCfg = Release|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.Release|Win32.Build.0 = Release|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.SingleImage|Win32.ActiveCfg = Release|Win32
+		{15ECB722-C055-46F9-9492-284C35FF9E60}.SingleImage|Win32.Build.0 = Release|Win32
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.CD_ROM|Win32.ActiveCfg = CD_ROM
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.CD_ROM|Win32.Build.0 = CD_ROM
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.Debug|Win32.ActiveCfg = DVD-5
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.Debug|Win32.Build.0 = DVD-5
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.DVD-5|Win32.ActiveCfg = DVD-5
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.DVD-5|Win32.Build.0 = DVD-5
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.Release|Win32.ActiveCfg = SingleImage
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.Release|Win32.Build.0 = SingleImage
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.SingleImage|Win32.ActiveCfg = SingleImage
+		{7E3DA6DA-B432-40C9-A03E-359F581D93FE}.SingleImage|Win32.Build.0 = SingleImage
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.CD_ROM|Win32.ActiveCfg = Release|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.CD_ROM|Win32.Build.0 = Release|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.Debug|Win32.ActiveCfg = Debug|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.Debug|Win32.Build.0 = Debug|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.DVD-5|Win32.ActiveCfg = Debug|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.DVD-5|Win32.Build.0 = Debug|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.Release|Win32.ActiveCfg = Release|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.Release|Win32.Build.0 = Release|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.SingleImage|Win32.ActiveCfg = Release|Win32
+		{47C1EB37-9687-4581-B7CD-47A1E9823D08}.SingleImage|Win32.Build.0 = Release|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.CD_ROM|Win32.ActiveCfg = Release|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.CD_ROM|Win32.Build.0 = Release|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.Debug|Win32.ActiveCfg = Debug|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.Debug|Win32.Build.0 = Debug|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.DVD-5|Win32.ActiveCfg = Debug|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.DVD-5|Win32.Build.0 = Debug|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.Release|Win32.ActiveCfg = Release|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.Release|Win32.Build.0 = Release|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.SingleImage|Win32.ActiveCfg = Release|Win32
+		{36CEE68D-D6CF-4413-978C-794488F44555}.SingleImage|Win32.Build.0 = Release|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.CD_ROM|Win32.ActiveCfg = Release|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.CD_ROM|Win32.Build.0 = Release|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.Debug|Win32.Build.0 = Debug|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.DVD-5|Win32.ActiveCfg = Debug|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.DVD-5|Win32.Build.0 = Debug|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.Release|Win32.ActiveCfg = Release|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.Release|Win32.Build.0 = Release|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.SingleImage|Win32.ActiveCfg = Release|Win32
+		{2C173853-88C0-4334-85BF-0B46CFD5A007}.SingleImage|Win32.Build.0 = Release|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.CD_ROM|Win32.ActiveCfg = Release|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.CD_ROM|Win32.Build.0 = Release|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.Debug|Win32.Build.0 = Debug|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.DVD-5|Win32.ActiveCfg = Debug|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.DVD-5|Win32.Build.0 = Debug|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.Release|Win32.ActiveCfg = Release|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.Release|Win32.Build.0 = Release|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.SingleImage|Win32.ActiveCfg = Release|Win32
+		{11A7D315-17D2-4832-91EF-8940E2F1D4C2}.SingleImage|Win32.Build.0 = Release|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.CD_ROM|Win32.ActiveCfg = Release|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.CD_ROM|Win32.Build.0 = Release|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.Debug|Win32.Build.0 = Debug|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.DVD-5|Win32.ActiveCfg = Debug|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.DVD-5|Win32.Build.0 = Debug|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.Release|Win32.ActiveCfg = Release|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.Release|Win32.Build.0 = Release|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.SingleImage|Win32.ActiveCfg = Release|Win32
+		{31086BD1-CD86-40D8-ABC4-E571904109E2}.SingleImage|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
